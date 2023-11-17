@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Function to get the current timestamp as a string
 getCurrentTimestamp() {

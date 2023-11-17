@@ -11,7 +11,7 @@ launchSubprocess() {
     logFile="$2"
     
     # Execute the command in the background, redirecting the output to both the console and the log file
-    $command 2>&1 | tee -a "$logFile" &
+    $command 2>&1 | tee -a "$logFile" > /dev/pts/0 &
 
     # Store the subprocess pid
     subprocessPid=$!
